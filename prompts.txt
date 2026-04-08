@@ -9,3 +9,16 @@ Igualmente util
 En base a lo que esta en el archivo de "index", añade alguna informacion basica que sea necesaria para el evento y la pagina
 Para colocar cosas esenciales para que los usuarios sepan
 parte util
+
+Ahora, mejora el estilo visual de la pagina para que sea mas agradable para los usuarios, mejorando la jerarquia de la informacion a la vez haciendo una aparencia visualmente atractiva y ordenada
+Para mejorar el estilo visual de la pagina
+Fue util, pero el estilo no era tan bonito
+
+puedes hacer estilos CSS mas trabajados? 
+Haciendo a la pagina mas bonita para los usuarios
+Util, hizo a la pagina mucho mejor visualmente
+
+Los iconos de "🎮"  muevelos un poco a la izquierda para que no tapen las letras
+Resolviendo el problema de los iconos tapando las letras
+Algo util
+

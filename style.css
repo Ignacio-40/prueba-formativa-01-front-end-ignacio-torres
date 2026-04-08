@@ -1,0 +1,228 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #2a2a2a 100%);
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #00ff00;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+    background: linear-gradient(45deg, #00ff00, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 20px #00ff00; }
+    to { text-shadow: 0 0 30px #00ff00, 0 0 40px #00ff00; }
+}
+
+h2 {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+h2::before {
+    content: '🎮';
+    position: absolute;
+    left: -25px;
+    top: -2px;
+    font-size: 1.5em;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #ffcc00, #00ff00);
+    border-radius: 2px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+ul li {
+    background: linear-gradient(135deg, #333333, #444444);
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00ff00;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 255, 0, 0.4);
+}
+
+ul li strong {
+    color: #ffcc00;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Sección de horario */
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.schedule p {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    transition: background 0.3s ease;
+}
+
+.schedule p:hover {
+    background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
+}
+
+.schedule strong {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+/* Sección de registro */
+.registration {
+    background: linear-gradient(135deg, #004400, #006600);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    position: relative;
+}
+
+.registration::before {
+    content: '📝';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: #000;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+
+/* Sección de contacto */
+.contact {
+    background: linear-gradient(135deg, #440000, #660000);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border: 2px solid #ff4444;
+    box-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+    position: relative;
+}
+
+.contact::before {
+    content: '📞';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: #000;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+
+.contact a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1em;
+    color: #cccccc;
+    border-top: 2px solid #555;
+    padding-top: 30px;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    ul {
+        grid-template-columns: 1fr;
+    }
+    .schedule {
+        gap: 10px;
+    }
+}
