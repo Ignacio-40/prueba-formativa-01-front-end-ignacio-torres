@@ -1,0 +1,11 @@
+<! -- Añade una descripcion del evento que contenga horarios, actividades y premios -->
+Para que los usuarios sepan de que trata el evento 
+termino siendo util
+
+<! -- Tambien incluye una estructura basica que contenga una seccion destacada para los patrocinadores del evento -->
+Parte para agradecer a los que patrocinan el evento
+Igualmente util
+
+En base a lo que esta en el archivo de "index", añade alguna informacion basica que sea necesaria para el evento y la pagina
+Para colocar cosas esenciales para que los usuarios sepan
+parte util
