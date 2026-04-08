@@ -29,3 +29,8 @@ Muy util para hacer que los usuarios se interesen por el evento
 Tambien añade una seccion de "Preguntas frecuentes" para poder aclarar diversas dudas que se pueden tener
 Parte de preguntas frecuentes para ayudar a los usuarios con dudas que se le generen
 Muy util, gran ayuda para los usuarios
+
+Ahora ayuda a hacer una interfaz para los dispositivos moviles, arreglando problemas de visualizacion y ajustando todo para las pantallas pequeñas
+Para mejorar la interfaz de los dispositivos moviles
+Muy util, especialmente para los usuarios de celular
+

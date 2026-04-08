@@ -271,18 +271,101 @@ footer::before {
 /* Responsive */
 @media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 15px;
+        max-width: 100%;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
+        margin-bottom: 15px;
     }
     h2 {
-        font-size: 1.7em;
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+    }
+    h2::before {
+        left: -20px;
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1em;
+        margin-bottom: 15px;
     }
     ul {
         grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    ul li {
+        padding: 15px;
     }
     .schedule {
         gap: 10px;
+    }
+    .schedule p {
+        padding: 12px;
+    }
+    .registration, .contact {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .btn {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+    .faq details {
+        padding: 8px;
+    }
+    .faq summary {
+        font-size: 1em;
+    }
+    .faq p {
+        font-size: 0.9em;
+    }
+    footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.3em;
+        margin-top: 25px;
+    }
+    h2::before {
+        left: -18px;
+        top: 0;
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.95em;
+    }
+    ul li {
+        padding: 12px;
+    }
+    .registration::before, .contact::before {
+        font-size: 1.2em;
+        top: -12px;
+    }
+    .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .faq details {
+        padding: 6px;
+    }
+    .faq summary {
+        font-size: 0.95em;
+    }
+    .faq p {
+        font-size: 0.85em;
     }
 }
